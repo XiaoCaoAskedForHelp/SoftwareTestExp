@@ -1,8 +1,104 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="NLP Test Suite">
-    <test name="NLP Test">
+<!--    <test name="Lexer NLP Test">-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testLexerAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="NLP Entity Test Case 1">-->
+<!--        <parameter name="text" value="马布里" />-->
+<!--        <parameter name="mention" value="马布里" />-->
+<!--        <parameter name="levels" value="人物,体育人物,主教练" />-->
+<!--        <parameter name="status" value="LINKED" />-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testEntityAnalysisAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="NLP Entity Test Case 2">-->
+<!--        <parameter name="text" value="百度" />-->
+<!--        <parameter name="mention" value="百度" />-->
+<!--        <parameter name="levels" value="组织,公司,互联网公司" />-->
+<!--        <parameter name="status" value="LINKED" />-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testEntityAnalysisAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="NLP Entity Test Case 3">-->
+<!--        <parameter name="text" value="特斯拉" />-->
+<!--        <parameter name="mention" value="特斯拉" />-->
+<!--        <parameter name="levels" value="组织,公司,汽车公司" />-->
+<!--        <parameter name="status" value="LINKED" />-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testEntityAnalysisAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="ECNet Test Case 1">-->
+<!--        <parameter name="text" value="百度是一家人工只能公司" />-->
+<!--        <parameter name="correctQuery" value="百度是一家人工智能公司" />-->
+<!--        <parameter name="oriFrag" value="人工只能" />-->
+<!--        <parameter name="correctFrag" value="人工智能" />-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testECNetAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="ECNet Test Case 2">-->
+<!--        <parameter name="text" value="曹同学喜欢去吕游" />-->
+<!--        <parameter name="correctQuery" value="曹同学喜欢去旅游" />-->
+<!--        <parameter name="oriFrag" value="吕游" />-->
+<!--        <parameter name="correctFrag" value="旅游" />-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testECNetAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="ECNet Test Case 3">-->
+<!--        <parameter name="text" value="我喜欢吃番茄吵蛋" />-->
+<!--        <parameter name="correctQuery" value="我喜欢吃番茄炒蛋" />-->
+<!--        <parameter name="oriFrag" value="番茄吵蛋" />-->
+<!--        <parameter name="correctFrag" value="番茄炒蛋" />-->
+<!--        <classes>-->
+<!--            <class name="com.example.demo.NLPTestNG">-->
+<!--                <methods>-->
+<!--                    <include name="testECNetAPI"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Keyword Extraction Test">
+        <parameter name="text" value="学习书法，就选唐颜真卿《颜勤礼碑》原碑与对临「第1节」" />
+        <parameter name="num" value="4" />
         <classes>
-            <class name="com.example.demo.NLPTestNG"/>
+            <class name="com.example.demo.NLPTestJersey">
+                <methods>
+                    <include name="testKeywordExtraction"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
