@@ -22,7 +22,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-
+/**
+ * TestNG test class for testing NLP APIs
+ */
 public class NLPTestNG {
     public static final String API_KEY = "6Vv7c3cwzSDX8JSFA15hFr48";
     public static final String SECRET_KEY = "jWCgA1RwLKoqVgSz2yawoPm1Bn92gYqk";
